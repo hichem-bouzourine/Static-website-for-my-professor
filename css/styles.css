@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 strong {
@@ -37,19 +38,19 @@ li {
 
 /* Anchors */
 
-a,
+main a,
 a:visited {
   color: rgb(27, 89, 100);
   text-decoration: none;
 }
-a:hover {
+main a:hover {
   color: rgb(117, 117, 117);
   transition: color 0.5s ease-in-out;
 }
 
 /* Navigation bar */
 
-.nav {
+nav {
   align-items: center;
   border-radius: 1.3rem;
   box-shadow: 0 0 0.7rem rgb(235, 233, 233);
@@ -76,15 +77,16 @@ a:hover {
 
 /* Side bar */
 
-.aside {
+aside {
   /* display: inline-block; */
   /* overflow: hidden; */
-  background-color: rgb(129, 35, 188);
+  background-color: rgb(152, 46, 218);
   color: #fff;
   font-size: 2rem;
   height: 100vh;
   position: fixed;
   top: 0;
+  left: 0;
   width: 38rem;
 }
 
@@ -93,32 +95,67 @@ a:hover {
   line-height: 1.6;
 }
 
+aside a, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* page content*/
 
-.content {
+main {
   /* clear: both; */
   display: inline-block;
   margin-left: 38rem;
   margin-top: 10rem;
   padding-left: 15rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
-#content__img-pers {
+#img-pers {
   /* display: inline-block; */
   /* height: auto; */
   /* overflow: hidden; */
   border-radius: 1rem;
   margin-left: 38rem;
   margin: 0 auto;
-  max-height: 40rem;
-  max-width: 40rem;
+  max-height: 45rem;
+  max-width: 45rem;
   position: absolute;
 }
 
-.content__img-descreption {
+figcaption {
+  margin-left: 38rem;
+}
+
+.img-descreption {
   /* clear: both; */
   /* display: inline-block; */
   font-size: 110%;
-  margin-left: 42rem;
+  margin-left: 40rem;
   padding-left: 1rem;
+}
+
+.encadrement{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.encadrement h1 {
+  text-align: center;
+}
+
+.encadrement h2,h1 {
+  color: rgb(116, 14, 14);
+  margin-top: 6rem;
+}
+
+.encadrement h2, p {
+  font-style: italic;
+}
+.encadrement li {
+  list-style-image: url(../images/right-arrow.gif);
+  line-height: 1.7;
+  padding-left: 0.3rem;
 }

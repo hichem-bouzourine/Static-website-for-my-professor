@@ -11,13 +11,13 @@
   </head>
   <body>
     <header>
-      <div class="nav">
+      <nav>
         <a href="https://www.usthb.dz/" target="_blanc"><img src="images/picture-usthb-logo.png" class="nav__img-usthb" /></a>
         <img src="images/picture-computer-vision.jpg" class="nav__img-field" />
         <a href="https://lria.usthb.dz/" target="_blanc"><img src="images/picture-labo-lria.jpg" class="nav__img-labo" /></a>
-      </div>
+      </nav>
     </header>
-    <div class="aside">
+    <aside>
       <ul>
         <li class="aside__acts">
           &#x2192 Activités Pédagogiques
@@ -39,7 +39,13 @@
                 <li>Ingéniorat</li>
               </ul>
             </li>
-            <li>Encadrement</li>
+            <li id="ens">
+              <ul><a href="Component/Encadrement.html">Encadrement</a>
+                <li><a href="Component/Encadrement.html">Projets de Master</a></li>
+                <li><a href="Component/Encadrement.html">Projets de Licence</a></li>
+                <li><a href="Component/Encadrement.html">Projets d'ingénieurs</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li class="aside__acts">
@@ -47,33 +53,37 @@
           <ul>
             <li>Publications Internationales</li>
             <li>Communications Internationales</li>
-            <li>Animations de la Recherche</li>
+            <li id="ens"><ul>Animations de la Recherche
+              <li>Comités de Programme</li>
+            </ul> </li>
             <li>Doctorants</li>
             <li>Ouvrages</li>
           </ul>
         </li>
       </ul>
-    </div>
-    <div class="content">
-      <img
-        src="images/picture-pers.jpg"
-        id="content__img-pers"
-      />
+    </aside>
+    <main>
+      <figure>
+        <img
+        src="images/picture-pers.png"
+        id="img-pers"
+        />
+      </figure>
       <p
-       class="content__img-descreption" >
+       class="img-descreption" >
         <br>
-        <strong>A propos:</strong> <br />
+        <strong>A propos</strong> <br />
         <em>Laiche Nacera</em> Enseignante chercheur a la Faculté
         d'Informatique,<br> Université des Sciences et de la technologie Houari
         Boumediene (<strong>USTHB</strong>). <br> Laboratoire d'Intelligence Artificielle
         (LRIA). <br />
-        <strong>Domaines de Recherche</strong> Vision par Ordinateur, Modélisation
+        <bold><em>Domaines de Recherche</em></bold> Vision par Ordinateur, Modélisation
         géométrique <br> et Reconnaissance des formes d'objets, Reconstruction 3D,
         Analyse d'images <br> et interprétation des scènes réelles. <br />
-        <strong>Contact:</strong> <br />
+        <strong>Contact</strong> <br />
         Faculté d'Informatique, BP 32 El Alia, Bab Ezzouar, Alger, Algérie. <br>
         <a href="mailto:nlaiche@usthb.dz">nlaiche@usthb.dz</a>
       </p>
-    </div>
+    </main>
   </body>
 </html>
